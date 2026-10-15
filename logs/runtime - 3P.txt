@@ -1,0 +1,15 @@
+Federated PRS Run Started: Sat Aug 15 14:42:55 2026
+RingDim: 16384, MultDepth: 1, ScaleModSize: 50
+Number of Hospitals: 3
+Phase 1 (Setup): 0.012812 s
+Phase 2 (KeyGen): 0.0111552 s
+Phase 3 (EvalMult KeyGen): 0.048274 s
+Phase 4 (EvalSum KeyGen): 0.140354 s
+Phase 5 (Read & Encrypt): 56.6424 s
+Phase 6 (Evaluation): 241.499 s
+Hospital 1 patient count: 400
+Hospital 2 patient count: 400
+Hospital 3 patient count: 400
+Phase 7 & 8 (Decryption & Output): 9.83853 s
+Peak Memory Usage: 9679.91 MB (9.45 GB)
+Total Time: 308.25 s

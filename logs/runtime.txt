@@ -1,0 +1,25 @@
+Federated PRS Run Started: Wed Oct 14 19:57:18 2026
+RingDim: 16384, MultDepth: 1, ScaleModSize: 50
+Number of Hospitals: 2
+Pad range: uniform in [-2^20, 2^20)
+Phase 1 (Setup): 0.0108795 s
+Phase 2 (KeyGen): 0.0075842 s
+Phase 3 (EvalMult KeyGen): 0.0344874 s
+Phase 4 (EvalSum KeyGen): 0.0774548 s
+Phase 5 (Read & Encrypt): 34.9542 s
+Phase 6 (Evaluation): 174.833 s
+Pad self-check: |score(pad A) - score(pad B)| = 1.921e-09
+Pad-reuse guard: re-issue refused, double-unmask refused
+N-of-N check: with any one hospital's share missing -> decoder refused 2, garbage 0, recovered 0 (of 2 subsets)
+Hospital 1 patient count: 400
+Hospital 2 patient count: 400
+Phase 7 & 8 (Decryption & Output): 8.858 s
+Isolation ledger (pad-based):
+  Hospital 1: patients = 400, pads generated/sent encrypted = 400, scores unmasked locally = 400, decryption shares sent = 800, pads still held after run = 0
+  Hospital 2: patients = 400, pads generated/sent encrypted = 400, scores unmasked locally = 400, decryption shares sent = 800, pads still held after run = 0
+  Plaintext pads that ever left a hospital: 0 (only encrypted pads were sent)
+  Serialized sizes: encrypted pad = 787423 B, decryption share = 263103 B
+  Traffic: 800 encrypted pads + 1600 shares + 800 masked scores = 1002.23 MB
+  Model owner / evaluator (own beta + public context; no secret key, no pad): PRS ciphertexts computed = 800, masks added = 800, masked scores released = 800
+Peak Memory Usage: 7118.03 MB (6.95 GB)
+Total Time: 218.99 s
