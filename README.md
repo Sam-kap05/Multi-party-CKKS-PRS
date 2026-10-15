@@ -70,8 +70,7 @@ The program variants differ only in Phase 7:
 
 | Version | Phase 7 behavior |
 |---|---|
-| `multiparty_prs1` | One loop fuses shares for **all** patients, so whoever runs fusion sees every hospital's scores. |
-| `multiparty_prs2` | Hospital *h* is the lead for **its own** ciphertexts; the other hospitals send their shares only to *h*, who fuses locally. |
+| `multiparty_prs1` | Hospital *h* is the lead for **its own** ciphertexts; the other hospitals send their shares only to *h*, who fuses locally. |
 | `multiparty_prs3` | Adds a random **pad/mask** under the joint key, so what gets fused is `PRS + r` rather than the PRS, and the recipient unmasks. Includes an N-of-N self-check: decryption with any one share removed must fail. |
 
 > **Honest scope:** all roles currently run **in a single process**. Isolation is demonstrated and enforced by routing, not by process or network boundaries. Real isolation needs separate processes or machines with real channels.
